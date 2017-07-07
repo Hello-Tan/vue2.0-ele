@@ -56,6 +56,7 @@
   import shopcart from '../shopcart/shopcart';
   import shopbtn from '../shopbtn/shopbtn.vue';
   import food from '../food/food.vue';
+  import Data from '../../../data.json';
 
   export default {
     props: {
@@ -94,6 +95,13 @@
         });
         return selectshop;
       }
+    },
+    created () {
+      this.goods = Data.goods;
+      this.$nextTick(() => {
+        this._initScroll();
+        this._calculateHeight();
+      });
     },
     methods: {
       _initScroll () {

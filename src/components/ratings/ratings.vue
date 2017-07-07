@@ -62,9 +62,9 @@
   import split from '../../components/split/split.vue';
   import ratinglist from '../../components/ratinglist/ratinglist.vue';
   import {formattingDate} from '../../common/js/formattingDate';
-  import axios from 'axios';
   import Hub from '../eventHub';
   import BScroll from 'better-scroll';
+  import Data from '../../../data.json';
 
   const ALL = 2;
 
@@ -87,14 +87,8 @@
       ratinglist
     },
     created () {
-      axios.get('/api/ratings')
-        .then((response) => {
-          this.ratings = response.data.data;
-          this._initScroll();
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      this.ratings = Data.ratings;
+      this._initScroll();
       Hub.$on('selectRating', (only, type) => {
         this.onlyContent = only;
         this.selectType = type;

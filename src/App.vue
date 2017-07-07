@@ -35,9 +35,7 @@
       };
     },
     created () {
-      console.log(this.seller);
       this.seller = Data.seller;
-      console.log(this.seller);
     },
     components: {
       'v-header': header
