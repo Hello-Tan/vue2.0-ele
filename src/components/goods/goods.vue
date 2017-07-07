@@ -52,7 +52,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import axios from 'axios';
   import BScroll from 'better-scroll';
   import shopcart from '../shopcart/shopcart';
   import shopbtn from '../shopbtn/shopbtn.vue';
@@ -95,19 +94,6 @@
         });
         return selectshop;
       }
-    },
-    created () {
-      axios.get('/api/goods')
-        .then((response) => {
-          this.goods = response.data.data;
-          this.$nextTick(() => {
-            this._initScroll();
-            this._calculateHeight();
-          });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
     },
     methods: {
       _initScroll () {
