@@ -35,7 +35,7 @@
       };
     },
     created () {
-      axios.get('/api/seller?id=' + this.seller.id)
+      axios.get('./api/seller?id=' + this.seller.id)
         .then((response) => {
           /* 创建一个新的对象，让它包含原对象的属性和新的属性 */
           this.seller = Object.assign({}, this.seller, response.data.data);
