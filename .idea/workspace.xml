@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5359849">
-              <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+              <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -585,7 +585,7 @@
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5359849">
-          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
           <folding>
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
