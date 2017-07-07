@@ -40,9 +40,12 @@
         .then((response) => {
           /* 创建一个新的对象，让它包含原对象的属性和新的属性 */
           this.seller = Object.assign({}, this.seller, response.data.data);
+          console.log(this.seller);
+          console.log(response);
         })
         .catch((err) => {
           console.log(err);
+          console.log(this.seller);
         });
       this.seller = Data.seller;
     },

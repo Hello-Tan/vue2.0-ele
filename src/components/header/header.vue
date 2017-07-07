@@ -75,6 +75,7 @@ export default {
   methods: {
     showDetail () {
       this.detailShow = !this.detailShow;
+      console.log(this.seller);
     }
   },
   components: {
