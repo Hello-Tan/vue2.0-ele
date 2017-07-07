@@ -1,0 +1,42 @@
+html,body
+  line-height:1
+  font-weight:200
+  font-family:"PingFang SC","STHeitiSC-Light","Helvetica-Light",Arial,sans-serif
+
+.clearfix
+  display:inline-block
+  &:after
+    display: block
+    content:'.'
+    height:0
+    clear: both
+    visibility:hidden
+@media (-webkit-min-device-pixel-ratio: 1.5)
+,(min-device-aspect-ratio: 1.5)
+  .border-1px
+    &:after
+      -webkit-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+  .border-1pxx
+    &:after
+      -webkit-transform: scaleX(0.7)
+      transform: scaleX(0.7)
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-aspect-ratio: 2)
+  .border-1px
+    &:after
+      -webkit-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+  .border-1pxx
+    &:after
+      -webkit-transform: scaleX(0.5)
+      transform: scaleX(0.5)
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-aspect-ratio: 3)
+  .border-1px
+    &:after
+      -webkit-transform: scaleY(0.33)
+      transform: scaleY(0.33)
+  .border-1pxx
+    &:after
+      -webkit-transform: scaleX(0.33)
+      transform: scaleX(0.33)
