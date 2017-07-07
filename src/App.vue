@@ -22,6 +22,7 @@
   import header from './components/header/header.vue';
   import axios from 'axios';
   import {urlParse} from './common/js/util';
+  import Data from '../data.json';
 
   export default{
     data () {
@@ -43,6 +44,7 @@
         .catch((err) => {
           console.log(err);
         });
+      this.seller = Data.seller;
     },
     components: {
       'v-header': header
